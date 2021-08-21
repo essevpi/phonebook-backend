@@ -1,0 +1,35 @@
+# Add person
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Simone",
+    "number": "346-1296094"
+}
+
+### Add person with no number
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Simone",
+    "number": ""
+}
+
+### Add person with no name
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "",
+    "number": "346-1296094"
+}
+
+### Add person with name already existing
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Ada Lovelace",
+    "number": "346-1296094"
+}
