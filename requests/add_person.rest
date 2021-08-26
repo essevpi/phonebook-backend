@@ -33,3 +33,13 @@ Content-Type: application/json
     "name": "Ada Lovelace",
     "number": "346-1296094"
 }
+
+### Add a person with wrong options (minLength name, number)
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Nani",
+    "number": "3461"
+}
